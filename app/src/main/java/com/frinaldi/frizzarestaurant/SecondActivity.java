@@ -8,6 +8,7 @@ import androidx.constraintlayout.widget.Group;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -23,6 +24,8 @@ public class SecondActivity extends AppCompatActivity {
     String mim = "Metro Indah Mall";
     Uri gmmIntentUri;
     Group location_maps;
+    Button send_button;
+    TextView send_display_name;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,5 +70,21 @@ public class SecondActivity extends AppCompatActivity {
                 startActivity(mapIntent);
             });
         }
+
+        send_button = findViewById(R.id.button_submit_id);
+        send_display_name = findViewById(R.id.input_nama_id);
+        send_button.setOnClickListener(v -> {
+            // get the value which input by user in EditText and convert it to string
+            String str = userIntent.getStringExtra("display_name");
+            String selectedItem= userIntent.getStringExtra("store_location");
+            // Create the Intent object of this class Context() to Second_activity class
+            Intent menuIntent = new Intent(getApplicationContext(), ThirdActivity.class);
+            // now by putExtra method put the value in key, value pair key is
+            // message_key by this key we will receive the value, and put the string
+            menuIntent.putExtra("display_name", str);
+            menuIntent.putExtra("store_location", selectedItem);
+            // start the Intent
+            startActivity(menuIntent);
+        });
     }
 }

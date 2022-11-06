@@ -4,12 +4,17 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Sapri/AndroidProject/FrizzaRestaurant/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2265" />
+        <entry key="..\:/Sapri/AndroidProject/FrizzaRestaurant/app/src/main/res/drawable/circle_bg.xml" value="0.2195" />
         <entry key="..\:/Sapri/AndroidProject/FrizzaRestaurant/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2265" />
+        <entry key="..\:/Sapri/AndroidProject/FrizzaRestaurant/app/src/main/res/drawable/img_bg.xml" value="0.2195" />
         <entry key="..\:/Sapri/AndroidProject/FrizzaRestaurant/app/src/main/res/drawable/rectangle_bg.xml" value="0.107" />
         <entry key="..\:/Sapri/AndroidProject/FrizzaRestaurant/app/src/main/res/layout-v28/activity_main.xml" value="0.264" />
         <entry key="..\:/Sapri/AndroidProject/FrizzaRestaurant/app/src/main/res/layout-v28/location_item.xml" value="0.22826086956521738" />
         <entry key="..\:/Sapri/AndroidProject/FrizzaRestaurant/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Sapri/AndroidProject/FrizzaRestaurant/app/src/main/res/layout/activity_second.xml" value="0.264" />
+        <entry key="..\:/Sapri/AndroidProject/FrizzaRestaurant/app/src/main/res/layout/activity_third.xml" value="0.264" />
+        <entry key="..\:/Sapri/AndroidProject/FrizzaRestaurant/app/src/main/res/layout/menu_list.xml" value="0.4" />
+        <entry key="..\:/Sapri/AndroidProject/FrizzaRestaurant/app/src/main/res/layout/menu_picture_list.xml" value="0.22826086956521738" />
       </map>
     </option>
   </component>
