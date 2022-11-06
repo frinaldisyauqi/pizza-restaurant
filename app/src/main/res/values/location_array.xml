@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="location_array">
+        <item>Cihampelas Walk</item>
+        <item>Bandung Indah Plaza</item>
+        <item>Metro Indah Mall</item>
+    </string-array>
+</resources>
