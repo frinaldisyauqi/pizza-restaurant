@@ -40,12 +40,15 @@
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="56sp"
+        android:layout_height="56sp"
         android:layout_margin="20sp"
+        android:backgroundTint="@color/red_main"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:srcCompat="@android:drawable/ic_input_add"
+        app:srcCompat="@drawable/shopping_cart"
+        app:tint="@color/white"
+        app:maxImageSize="35sp"
         tools:ignore="MissingConstraints"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
