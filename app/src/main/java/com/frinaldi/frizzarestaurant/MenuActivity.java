@@ -31,16 +31,16 @@ public class MenuActivity extends AppCompatActivity {
 
         if (menu_name.equals("Margherita Pizza")){
             menuImages.setImageResource(R.drawable.pizza_margherita);
-            menuDesc.setText("Margherita Pizza is a typical Neapolitan pizza, made with San Marzano tomatoes, mozzarella cheese, fresh basil, salt, and extra-virgin olive oil");
+            menuDesc.setText(R.string.margherita_desc);
         } else if (menu_name.equals("Smoked Salmon Pizza")){
             menuImages.setImageResource(R.drawable.pizza_smokedsalmon);
-            menuDesc.setText("Pesketarian pizza option with beatifully smoked salmon that rich with umami.");
+            menuDesc.setText(R.string.salmon_desc);
         } else if (menu_name.equals("Shrimp Pizza")){
             menuImages.setImageResource(R.drawable.pizza_shrimp);
-            menuDesc.setText("Frutti di Mare is an Italian type of pizza that may be served with shrimp. Lack Cheese with the seafood being served atop a tomato sauce.");
+            menuDesc.setText(R.string.shrimp_desc);
         } else if (menu_name.equals("Pepperoni Pizza")){
             menuImages.setImageResource(R.drawable.pizza_pepperoni);
-            menuDesc.setText("Pepperoni is an American variety of spicy salami made from cured pork and beef seasoned with paprika or other chili pepper.");
+            menuDesc.setText(R.string.pepperoni_desc);
         }
     }
 }
