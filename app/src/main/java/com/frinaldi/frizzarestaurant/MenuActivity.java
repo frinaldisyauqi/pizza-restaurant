@@ -11,6 +11,7 @@ public class MenuActivity extends AppCompatActivity {
     TextView receiver_menu_name;
     ImageView menuImages;
     TextView menuDesc;
+    TextView menuPrice;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,19 +29,24 @@ public class MenuActivity extends AppCompatActivity {
         //Change Image
         menuImages = findViewById(R.id.menu_big_picture);
         menuDesc = findViewById(R.id.menu_item_desc);
+        menuPrice = findViewById(R.id.menu_item_price);
 
         if (menu_name.equals("Margherita Pizza")){
             menuImages.setImageResource(R.drawable.pizza_margherita);
             menuDesc.setText(R.string.margherita_desc);
+            menuPrice.setText("Rp. 150.000,0");
         } else if (menu_name.equals("Smoked Salmon Pizza")){
             menuImages.setImageResource(R.drawable.pizza_smokedsalmon);
             menuDesc.setText(R.string.salmon_desc);
+            menuPrice.setText("Rp. 120.000,0");
         } else if (menu_name.equals("Shrimp Pizza")){
             menuImages.setImageResource(R.drawable.pizza_shrimp);
             menuDesc.setText(R.string.shrimp_desc);
+            menuPrice.setText("Rp. 170.000,0");
         } else if (menu_name.equals("Pepperoni Pizza")){
             menuImages.setImageResource(R.drawable.pizza_pepperoni);
             menuDesc.setText(R.string.pepperoni_desc);
+            menuPrice.setText("Rp. 110.000,0");
         }
     }
 }
