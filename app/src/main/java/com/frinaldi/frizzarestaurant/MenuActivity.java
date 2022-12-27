@@ -26,6 +26,7 @@ public class MenuActivity extends AppCompatActivity {
         Intent userIntent = getIntent();
         // receive the value by getStringExtra() method and
         // key must be same which is send by first activity
+        String display_name = userIntent.getStringExtra("display_name");
         String menu_name = userIntent.getStringExtra("menu_name");
         // display the string into textView
         receiver_menu_name.setText(menu_name);
@@ -37,7 +38,7 @@ public class MenuActivity extends AppCompatActivity {
 
         if (menu_name.equals("Margherita Pizza")){
             menuImages.setImageResource(R.drawable.pizza_margherita);
-            menuDesc.setText(R.string.margherita_desc);
+            menuDesc.setText(display_name);
             menuPrice.setText("Rp. 150.000,0");
         } else if (menu_name.equals("Smoked Salmon Pizza")){
             menuImages.setImageResource(R.drawable.pizza_smokedsalmon);
@@ -57,6 +58,7 @@ public class MenuActivity extends AppCompatActivity {
         menuButton.setOnClickListener(
                 v -> {
                     Intent i = new Intent(MenuActivity.this,ThirdActivity.class);
+                    i.putExtra("display_name", display_name);
                     startActivity(i);
                 }
         );

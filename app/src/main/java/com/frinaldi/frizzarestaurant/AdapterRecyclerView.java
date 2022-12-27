@@ -19,11 +19,13 @@ public class AdapterRecyclerView extends RecyclerView.Adapter<AdapterRecyclerVie
 
     private String[] SubjectValues;
     private Context context;
+    String display_name;
 
-    AdapterRecyclerView(Context context1, String[] SubjectValues1) {
+    AdapterRecyclerView(Context context1, String[] SubjectValues1, String display_name1) {
 
         SubjectValues = SubjectValues1;
         context = context1;
+        display_name = display_name1;
     }
 
     static class ViewHolder extends RecyclerView.ViewHolder {
@@ -66,6 +68,7 @@ public class AdapterRecyclerView extends RecyclerView.Adapter<AdapterRecyclerVie
             // now by putExtra method put the value in key, value pair key is
             // menu_name by this key we will receive the value, and put the string
             menuIntent.putExtra("menu_name", str);
+            menuIntent.putExtra("display_name", display_name);
             // start the Intent
             context.startActivity(menuIntent);
         });

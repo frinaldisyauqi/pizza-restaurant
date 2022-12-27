@@ -40,7 +40,7 @@ public class ThirdActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.recyclerView);
         recyclerViewLayoutManager = new LinearLayoutManager(context);
         recyclerView.setLayoutManager(recyclerViewLayoutManager);
-        recyclerViewAdapter = new AdapterRecyclerView(context, subjects);
+        recyclerViewAdapter = new AdapterRecyclerView(context, subjects,display_name);
         recyclerView.setAdapter(recyclerViewAdapter);
     }
 
