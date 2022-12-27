@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
             // now by putExtra method put the value in key, value pair key is
             // message_key by this key we will receive the value, and put the string
             userIntent.putExtra("display_name", str);
-            userIntent.putExtra("store_location", selectedItem);
+            userIntent.putExtra("store_name", selectedItem);
             // start the Intent
             startActivity(userIntent);
         });

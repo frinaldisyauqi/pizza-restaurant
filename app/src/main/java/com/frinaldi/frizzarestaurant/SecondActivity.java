@@ -43,7 +43,7 @@ public class SecondActivity extends AppCompatActivity {
         receiver_display_name.setText(default_text + display_name);
 
         //Change Image By Location
-        String receiver_store_name = userIntent.getStringExtra("store_location");
+        String receiver_store_name = userIntent.getStringExtra("store_name");
         store_location = findViewById(R.id.store_photos_id);
         store_name = findViewById(R.id.store_name_id);
         if (Objects.equals(receiver_store_name, ciwalk)) {
@@ -76,13 +76,13 @@ public class SecondActivity extends AppCompatActivity {
         send_button.setOnClickListener(v -> {
             // get the value which input by user in EditText and convert it to string
             String str = userIntent.getStringExtra("display_name");
-            String selectedItem= userIntent.getStringExtra("store_location");
+            String selectedItem= userIntent.getStringExtra("store_name");
             // Create the Intent object of this class Context() to Second_activity class
             Intent menuIntent = new Intent(getApplicationContext(), ThirdActivity.class);
             // now by putExtra method put the value in key, value pair key is
             // message_key by this key we will receive the value, and put the string
             menuIntent.putExtra("display_name", str);
-            menuIntent.putExtra("store_location", selectedItem);
+            menuIntent.putExtra("store_name", selectedItem);
             // start the Intent
             startActivity(menuIntent);
         });
